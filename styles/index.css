@@ -1,0 +1,270 @@
+/* main content section */
+.section-h1 {
+    color: var(--font-primary-color);
+    font-family: var(--font-primary-family);
+}
+.section-h1 span {
+    position: relative;
+    /* font */
+    top: 20px;
+    color: black;
+    display: inline-block;
+    font-size: 5rem;
+    text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7, 0 4px 0 #b7b7b7, 
+                0 5px 0 #b7b7b7, 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 
+                0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0.5);
+    animation: bounce 0.4s ease infinite alternate;
+}
+.section-h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.section-h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.section-h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.section-h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.section-h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+
+.section-p {
+    color: var(--font-secondary-color);
+    font-family: var(--font-secondary-family);
+    margin-top: var(--space-2xl);
+    font-size: var(--font-2xl);
+}
+.section-img {
+    width: 498px;
+    height: 498px;
+}
+
+/* buttons section */
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-5xl);
+    margin: var(--space-2xl);
+    font-family: var(--font-secondary-family);
+    font-weight: bold;
+    font-size: var(--font-2xl);
+}
+.yes-btn {
+    --stone-50: var(--border-color);
+    --stone-800: #292524;
+    --yellow-400: var(--film-secondary-color);
+
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 1px;
+    left: -4rem;
+
+    transform: translate(-4px, -4px);
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    border-radius: 9999px;
+    background-color: var(--stone-800);
+    color: #e9e1e1;
+
+    transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+    text-align: center;
+    box-shadow:
+        0.5px 0.5px 0 0 var(--stone-800),
+        1px 1px 0 0 var(--stone-800),
+        1.5px 1.5px 0 0 var(--stone-800),
+        2px 2px 0 0 var(--stone-800),
+        2.5px 2.5px 0 0 var(--stone-800),
+        3px 3px 0 0 var(--stone-800),
+        0 0 0 2px var(--stone-50),
+        0.5px 0.5px 0 2px var(--stone-50),
+        1px 1px 0 2px var(--stone-50),
+        1.5px 1.5px 0 2px var(--stone-50),
+        2px 2px 0 2px var(--stone-50),
+        2.5px 2.5px 0 2px var(--stone-50),
+        3px 3px 0 2px var(--stone-50),
+        3.5px 3.5px 0 2px var(--stone-50),
+        4px 4px 0 2px var(--stone-50);
+
+    &:hover {
+        transform: translate(0, 0);
+        box-shadow: 0 0 0 2px var(--stone-50);
+    }
+    &:active,
+    &:focus-visible {
+        outline-color: var(--yellow-400);
+    }
+    &:focus-visible {
+        outline-style: dashed;
+    }
+
+    & > div {
+        position: relative;
+        pointer-events: none;
+        background-color: var(--yellow-400);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 9999px;
+        padding: var(--space-lg) var(--space-2xl);
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            opacity: 0.5;
+            background-image: radial-gradient(
+                rgb(255 255 255 / 80%) 20%,
+                transparent 20%
+                ),
+                radial-gradient(rgb(255 255 255 / 100%) 20%, transparent 20%);
+            background-position:
+                0 0,
+                4px 4px;
+            background-size: 8px 8px;
+            mix-blend-mode: hard-light;
+            animation: dots 0.5s infinite linear;
+            }
+    }
+
+    & > span {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.25rem;
+        gap: 0.25rem;
+        filter: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.25));
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+
+}
+.no-btn {
+    display: block;
+    position: absolute;
+    font-family: var(--font-secondary-family);
+    left: 15rem;
+    top: 34.4rem;
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--font-xl);
+    outline: none;
+    border: none;
+    border-radius: var(--radius-xxxl);
+    transition: 0.5s;
+    background: var(--primary-color);
+    cursor: pointer;
+    color: var(--menu-card-color);
+    box-shadow: 0 0 10px var(--border-color), inset 0 0 10px var(--border-color);
+}
+.no-btn:hover {
+    animation: wobblehorizontal 0.5s 1 linear;
+}
+
+
+
+
+/* keyframes */
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 
+                     0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 
+                     0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes dots {
+    0% {
+        background-position:
+        0 0,
+        4px 4px;
+    }
+    100% {
+        background-position:
+        8px 0,
+        12px 4px;
+    }
+}
+@keyframes wobblehorizontal {
+    0% {
+        transform: scale(0.7, 1.3);
+    }
+    25% {
+        transform: scale(1.3, 0.7);
+    }
+    50% {
+        transform: scale(0.7, 1.3);
+    }
+    75% {
+        transform: scale(1.3, 0.7);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* for bigger screens; laptop, monitor */
+@media (min-width: 768px) {
+    .no-btn {
+        left: 30rem;
+        top: 44.1rem;
+    }
+    .header-h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 810px) {
+    .no-btn {
+        left: 34rem;
+        top: 44.1rem;
+    }
+    .header-h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .no-btn {
+        left: 43rem;
+        top: 44rem;
+    }
+    .header-h1 {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .no-btn {
+        left: 50rem;
+        top: 44rem;
+    }
+    .header-h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1900px) {
+    .no-btn {
+        left: 63rem;
+        top: 44rem;
+    }
+    .header-h1 {
+        font-size: 9rem;
+    }
+}

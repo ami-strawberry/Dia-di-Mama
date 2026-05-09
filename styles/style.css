@@ -1,0 +1,103 @@
+/* css for index.html page */
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(index.css);
+@import url(menu.css);
+@import url(letter.css);
+@import url(carousel.css);
+@import url(film.css);
+/* @import url(old_carousel.css); */
+
+
+:root {
+    /* page colors */
+    /* --primary-color: rgb(222, 102, 91); */
+    --primary-color: #767B91;
+    --menu-card-color: #C5C5C5;
+    --btn-primary-color: #4C5B61;
+    --btn-secondary-color: #88A2AA;
+    --btn-hover-color: #494a56;
+    --film-primary-color: #2A324B;
+    --film-secondary-color: #767B91;
+
+    /* border */
+    --border-color: #23264d;
+    --border-secondary-color: #C7CCDB;
+
+    /* font colors */
+    --font-primary-color: #3c508a;
+    --font-secondary-color: #354163;
+
+    /* font family */
+    --font-primary-family: 'Almendra SC', 'serif';
+    --font-secondary-family: 'Sour Gummy', 'sans-serif';
+
+    /* font sizes */
+    --font-xs: 0.813rem;
+    --font-sm: 0.875rem;
+    --font-md: 0.938rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 2rem;
+
+    /* page spaces (for margins/paddings) */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.25rem;
+    --space-xl: 1.5rem;
+    --space-2xl: 1.75rem;
+    --space-3xl: 2rem;
+    --space-4xl: 2.25rem;
+    --space-5xl: 2.5rem;
+
+    /* elements spaces (for buttons/cards) */
+    --menu-card-width: 90%;
+
+    /* border radius */
+    --radius-xs: 0.25rem;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.25rem;
+    --radius-xxl: 2rem;
+    --radius-xxxl: 3rem;
+    --radius-full: 9999px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--primary-color);
+    /* overflow: hidden; */
+    height: 100vh;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: var(--space-xl);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-btn {
+    background: transparent;
+    border: 3px solid var(--btn-hover-color);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    z-index: 12;
+}
+.home-btn:hover {
+    background-color: var(--border-secondary-color);
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.home-btn i:hover {
+    color: white !important;
+    transition: 0.15s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}

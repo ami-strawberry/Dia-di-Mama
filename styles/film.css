@@ -1,0 +1,92 @@
+/* css for the film.html */
+#main-film-container {
+    margin: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: var(--film-secondary-color);
+}
+
+/* HEADING */
+.heading-div {
+    margin: var(--space-md) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5xl);
+}
+.heading-h1 {
+    font-family: var(--font-primary-family);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(219, 203, 203);
+    /* animation: pulse 1s 5; */
+}
+#main-film-container .home-btn {
+    border-color: var(--btn-hover-color);
+    padding: var(--space-sm) var(--space-md);
+}
+
+/* MAIN SECTION */
+.film-section {
+    width: 100%;
+}
+.film-div {
+    display: flex;
+    border-top: 5px solid var(--border-secondary-color);
+    border-bottom: 5px solid var(--border-secondary-color);
+    overflow-x: auto;
+}
+.film-div::-webkit-scrollbar {
+    display: none;
+}
+.film-div-0 {
+    z-index: 1;
+}
+.film-div-1 {
+    width: 130%;
+    transform: scale(1.01) rotate(-25deg) translate(-8%, -30%);
+    z-index: 2;
+}
+.film-div-2 {
+    z-index: 3;
+}
+.film-group {
+    display: flex;
+    will-change: transform;
+    animation: slider 55s infinite linear;
+}
+
+.film-item {
+    position: relative;
+    width: 256px;
+    height: 202px;
+    contain: layout paint;
+}
+.film-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 2;
+}
+.film-text {
+    background-color: var(--film-primary-color);
+    color: rgb(212, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-2xl);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@keyframes slider {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+}

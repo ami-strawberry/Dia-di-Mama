@@ -1,0 +1,161 @@
+/* css for carousel.html */
+#main-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heading-div {
+    margin-bottom: var(--space-4xl);
+    font-family: var(--font-primary-family);
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+    animation: pulse 1s 5;
+}
+.carousel-div {
+    display: flex;
+    width: 95%;
+    /* height: 100vh; */
+    /* height: auto; */
+    border: 5px solid blue;
+    overflow-x: auto;
+    
+}
+.carousel-div::-webkit-scrollbar {
+    display: none;
+}
+.carousel-group {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-4xl);
+    padding-right: var(--space-4xl);
+
+    animation-name: slider;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.carousel-img {
+    border: 3px solid green;
+    width: 450px;
+    height: 590px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+}
+
+@keyframes slider {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}
+
+
+
+
+
+
+
+/* .img-0 {
+    top: 50%;
+    left: 50%;
+    opacity: 0.4;
+    z-index: 1;
+    transform: translateX(-110%);
+}
+.img-1 {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.img-2 {
+    top: 50%;
+    left: 50%;
+    opacity: 0.4;
+    z-index: 2;
+    transform: translateX(10%);
+}
+
+.to_prev {
+    animation-name: to_prev;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.to_current {
+    animation-name: to_current;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.to_stapel {
+    animation-name: to_stapel;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.to_next {
+    animation-name: to_next;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes to_prev {
+    0% {
+        
+    }
+    70% {
+        opacity: 0.4;
+        z-index: 1;
+    }
+    100% {
+        translate: -50%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}
+@keyframes to_current {
+    0% {
+        
+    }
+    70% {
+        opacity: 1;
+        z-index: 3;
+    }
+    100% {
+        translate: -50%;
+        opacity: 1;
+        z-index: 3;
+    }
+}
+@keyframes to_stapel {
+    0% {
+
+    }
+    70% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        translate: 50%;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+@keyframes to_next {
+    0% {
+        z-index: 1;
+    }
+    70% {
+        opacity: 0.4;
+        z-index: 1;
+    }
+    100% {
+        translate: 50%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}
+ */
