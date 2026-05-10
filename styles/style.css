@@ -5,12 +5,9 @@
 @import url(letter.css);
 @import url(carousel.css);
 @import url(film.css);
-/* @import url(old_carousel.css); */
-
 
 :root {
     /* page colors */
-    /* --primary-color: rgb(222, 102, 91); */
     --primary-color: #767B91;
     --menu-card-color: #C5C5C5;
     --btn-primary-color: #4C5B61;
