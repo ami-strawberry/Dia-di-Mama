@@ -36,7 +36,7 @@
     justify-self: center;
     align-self: center;
     position: absolute;
-    top: 3rem;
+    top: 4.3rem;
     gap: var(--space-xs);
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@
     justify-content: space-around;
     align-items: center;
     gap: var(--space-lg);
-    height: 70vh;
+    margin-bottom: var(--space-2xl);
 }
 .content-section a {
     justify-content: center;
@@ -81,8 +81,8 @@
 }
 .content-section img {
     flex: 0 0 2rem;
-    width: 24rem;
-    height: 20rem;
+    width: 320px;
+    height: 260px;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-xxl);
     object-fit: cover;
@@ -136,5 +136,22 @@
     }
     .header-p {
         top: 5rem;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {
+    .header-p {
+        top: 3.9rem;
+    }
+    .content-section {
+        height: 70vh;
+        margin-bottom: 0;
+    }
+    .content-section img {
+        width: 24rem;
+        height: 20rem;
     }
 }

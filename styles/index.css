@@ -1,4 +1,10 @@
 /* main content section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .section-h1 {
     color: var(--font-primary-color);
     font-family: var(--font-primary-family);
@@ -39,8 +45,9 @@
     font-size: var(--font-2xl);
 }
 .section-img {
-    width: 498px;
+    width: 400px;
     height: 498px;
+    object-fit: contain;
 }
 
 /* buttons section */
@@ -50,6 +57,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* position: relative; */
+    /* bottom: 10px; */
     gap: var(--space-5xl);
     margin: var(--space-2xl);
     font-family: var(--font-secondary-family);
@@ -61,6 +70,8 @@
     --stone-800: #292524;
     --yellow-400: var(--film-secondary-color);
 
+    /* position: relative;
+    top: 0; */
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
@@ -160,7 +171,7 @@
     position: absolute;
     font-family: var(--font-secondary-family);
     left: 15rem;
-    top: 34.4rem;
+    top: 765px;
     padding: var(--space-lg) var(--space-2xl);
     font-size: var(--font-xl);
     outline: none;
@@ -222,7 +233,7 @@
 @media (min-width: 768px) {
     .no-btn {
         left: 30rem;
-        top: 44.1rem;
+        top: 730px;
     }
     .header-h1 {
         font-size: 4rem;

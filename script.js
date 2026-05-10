@@ -2,7 +2,7 @@
 const main_index_container = document.getElementById("main-index-container");
 
 const main_section = document.createElement("section");
-main_section.className = "main_section";
+main_section.className = "main-section";
 main_index_container.appendChild(main_section);
 
 const section_h1 = document.createElement("h1");
