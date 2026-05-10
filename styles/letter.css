@@ -118,8 +118,9 @@
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     animation: scaleUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
     font-family: 'Georgia', serif;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #4a2a3a;
+    font-size: var(--font-sm);
 }
 
 .letter-modal-close {
@@ -164,5 +165,9 @@
     .letter-modal-card {
         max-width: 620px;
         line-height: 1.8;
+    }
+
+    .letter-modal-card {
+        font-size: var(--font-lg);
     }
 }
